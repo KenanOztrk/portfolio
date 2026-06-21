@@ -1,5 +1,7 @@
 import SmokeButton from '../../components/SmokeButton.jsx'
 
+const profilePhoto = new URL('../../assets/profile.jpg', import.meta.url).href
+
 const skills = [
   { name: 'React.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
   { name: 'Next.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg', invert: true },
@@ -8,6 +10,7 @@ const skills = [
   { name: '.NET Core', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg' },
   { name: 'C#', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg' },
   { name: 'PostgreSQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg' },
+  { name: 'Supabase', icon: 'https://cdn.simpleicons.org/supabase/3ECF8E' },
   { name: 'MongoDB', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg' },
   { name: 'Oracle Cloud', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg' },
   { name: 'Docker', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' },
@@ -40,10 +43,10 @@ const experiences = [
     company: 'BTS-GROUP',
     project: 'Olympos Automation',
     place: 'Ankara',
-    date: '08.2024 - Güncel',
+    date: '08.2024 - Present',
     description:
-      'Olympos Automation ve diğer sanallaştırma/otomasyon ürünleri için yönetim paneli üzerinde çalıştım. Envanter yönetimi, observability, rol bazlı erişim, raporlama ve otomasyon modüllerinin arayüzlerini geliştirdim. API entegrasyonları, dinamik dashboardlar ve kullanıcı deneyimini iyileştiren bileşenler üzerinde odaklandım.',
-    highlights: ['Olympos Automation yönetim paneli', 'Sanallaştırma ve otomasyon ürünleri', 'Dinamik dashboardlar ve API entegrasyonları'],
+      'I worked on the admin panel for Olympos Automation and other virtualization/automation products. I developed interfaces for inventory management, observability, role-based access, reporting, and automation modules. My focus was on API integrations, dynamic dashboards, and components that improved the user experience.',
+    highlights: ['Olympos Automation admin panel', 'Virtualization and automation products', 'Dynamic dashboards and API integrations'],
   },
   {
     role: 'Fullstack Developer',
@@ -51,55 +54,55 @@ const experiences = [
     place: 'Ankara',
     date: '03.2022 - 08.2024',
     description:
-      'Kurum içi dijitalleşme süreçlerinde React.js, .NET Core ve Material UI ile büyük ölçekli web uygulamaları geliştirdim. LİMAN yönetim sistemi gibi çok ekranlı projelerde Figma tabanlı tasarımlardan pixel-perfect UI ürettim.',
-    highlights: ['React.js ve .NET Core entegrasyonları', 'Karmaşık JSON veri modelleri', 'Kurumsal dijital dönüşüm ekranları'],
+      'I developed large-scale web applications with React.js, .NET Core, and Material UI as part of internal digital transformation initiatives. For multi-screen projects such as the LİMAN management system, I built pixel-perfect UIs from Figma-based designs.',
+    highlights: ['React.js and .NET Core integrations', 'Complex JSON data models', 'Enterprise digital transformation screens'],
   },
   {
     role: 'Founder / Software Developer',
     company: 'Liventa Teknoloji',
     project: 'Liventa Kuyum',
     place: '',
-    date: '2025 - Güncel',
+    date: '2025 - Present',
     description:
-      'Canli stok ve subeler arasi stok kontrolunu tek yerden yonetmek icin gelistirildi. Mobil satis, maliyet hesabi, derin ogrenme, raporlama, personel ve urun yonetimi modullerini kapsiyor.',
-    highlights: ['Canli stok ve sube kontrolu', 'Mobil satis ve maliyet hesabi', 'Raporlama ve yonetim modulleri'],
+      'Built to manage live inventory and stock control across branches from a single place. It includes mobile sales, cost calculation, deep learning, reporting, staff management, and product management modules.',
+    highlights: ['Live inventory and branch control', 'Mobile sales and cost calculation', 'Reporting and management modules'],
   },
   {
     role: 'Founder / Software Developer',
     company: 'Liventa Teknoloji',
     project: 'Liventa Transfer',
     place: '',
-    date: '2025 - Güncel',
+    date: '2025 - Present',
     description:
-      'Mailden veri alip otomatik is kaydi olusturur ve operasyonel sureci takibe alir. WhatsApp uzerinden yol bilgisi, is durumu ve detay bildirimleri gonderir.',
-    highlights: ['Mailden is kaydi olusturma', 'WhatsApp ile bilgilendirme', 'Operasyon takibi'],
+      'Receives data from email, automatically creates job records, and tracks the operational process. It sends route information, job status, and detailed notifications via WhatsApp.',
+    highlights: ['Automatic job creation from email', 'WhatsApp notifications', 'Operational tracking'],
   },
 ]
 
 const education = [
-  'Kırıkkale Üniversitesi | 09.2009 - 06.2011 | Elektrik-Otomasyon',
-  'Atılım Üniversitesi | 10.2012 - 12.2019 | Elektrik-Elektronik Mühendisliği (İngilizce)',
-  'BilgeAdam Akademi | 03.2021 - 10.2021 | Fullstack Yazılım Eğitimi',
+  'Kırıkkale University | 09.2009 - 06.2011 | Electrical Automation',
+  'Atılım University | 10.2012 - 12.2019 | Electrical and Electronics Engineering (English)',
+  'BilgeAdam Academy | 03.2021 - 10.2021 | Fullstack Software Training',
 ]
 
 const certificates = [
   {
     issuer: 'BilgeAdam',
-    title: 'Boost Yıldız Yazılımcı Sertifikası',
+    title: 'Boost Star Developer Certificate',
     date: '10.2021',
     file: '/certificates/bilgeadam-boost-yildiz-yazilimci.pdf',
     preview: '/certificates/previews/bilgeadam-boost-yildiz-yazilimci.pdf.png',
   },
   {
     issuer: 'RiseIn ICP.HUB TURKEY',
-    title: 'Internet Computer Motoko Sertifikası',
+    title: 'Internet Computer Motoko Certificate',
     date: '06.2024',
     file: '/certificates/risein-icp-motoko.pdf',
     preview: '/certificates/previews/risein-icp-motoko.pdf.png',
   },
   {
     issuer: 'Coderspace',
-    title: 'Product Management Sertifikası',
+    title: 'Product Management Certificate',
     date: '05.2025',
     file: '/certificates/coderspace-product-management.pdf',
     preview: '/certificates/previews/coderspace-product-management.pdf.png',
@@ -132,35 +135,44 @@ const Home = () => {
     <main className="home-shell">
       <nav className="home-nav" aria-label="Primary navigation">
         <div className="nav-smoke-group">
-          <SmokeButton className="nav-smoke-button" href="#top" width={132}>Home</SmokeButton>
-          <SmokeButton className="nav-smoke-button" href="#work" width={132}>Work</SmokeButton>
-          <SmokeButton className="nav-smoke-button" href="#skills" width={132}>Skills</SmokeButton>
-          <SmokeButton className="nav-smoke-button" href="#contact" width={132}>Contact</SmokeButton>
+          <SmokeButton className="nav-smoke-button" href="#top" width={132} imgLoading="eager" imgFetchPriority="high">Home</SmokeButton>
+          <SmokeButton className="nav-smoke-button" href="#work" width={132} imgLoading="eager" imgFetchPriority="high">Work</SmokeButton>
+          <SmokeButton className="nav-smoke-button" href="#skills" width={132} imgLoading="eager" imgFetchPriority="high">Skills</SmokeButton>
+          <SmokeButton className="nav-smoke-button" href="#contact" width={132} imgLoading="eager" imgFetchPriority="high">Contact</SmokeButton>
         </div>
       </nav>
 
       <section id="top" className="hero-section">
         <div className="hero-copy">
           <div className="hero-avatar-wrap">
-            <img className="hero-avatar" src="/src/assets/profile.jpg" alt="Kenan Öztürk" />
+            <img
+              className="hero-avatar"
+              src={profilePhoto}
+              alt="Kenan Öztürk"
+              width="1051"
+              height="1396"
+              loading="eager"
+              decoding="async"
+              fetchPriority="high"
+            />
           </div>
           <p className="eyebrow">Software Developer / Founder - Liventa Teknoloji</p>
           <h1>Kenan Öztürk</h1>
           <p className="hero-lead">
-            Elektrik-elektronik mühendisliği altyapısıyla; React, Next.js, .NET Core
-            ve modern frontend mimarileri üzerinde kurumsal ürünler geliştiren
-            yazılım geliştirici.
+            Software developer with an electrical and electronics engineering background,
+            building enterprise products with React, Next.js, .NET Core,
+            and modern frontend architectures.
           </p>
           <div className="hero-actions">
-            <SmokeButton href="#work" width={224}>Projeleri Gör</SmokeButton>
-            <SmokeButton href="/cv.pdf" width={224}>CV</SmokeButton>
+            <SmokeButton href="#work" width={224} imgLoading="eager" imgFetchPriority="high">View Projects</SmokeButton>
+            <SmokeButton href="/cv.pdf" width={224} imgLoading="eager" imgFetchPriority="high">Resume</SmokeButton>
           </div>
         </div>
 
         <aside className="hero-panel" aria-label="Profile summary">
           <div className="hero-panel-top">
-            <span className="hero-panel-label">Odak</span>
-            <span className="hero-panel-value">UI, veri akışı, operasyon</span>
+            <span className="hero-panel-label">Focus</span>
+            <span className="hero-panel-value">UI, data flow, operations</span>
           </div>
           <div className="hero-panel-grid">
             <div>
@@ -168,8 +180,8 @@ const Home = () => {
               <span className="hero-panel-value">React / Next / .NET</span>
             </div>
             <div>
-              <span className="hero-panel-label">Alan</span>
-              <span className="hero-panel-value">Kurumsal ürünler</span>
+              <span className="hero-panel-label">Domain</span>
+              <span className="hero-panel-value">Enterprise products</span>
             </div>
           </div>
         </aside>
@@ -177,7 +189,7 @@ const Home = () => {
 
       <section id="work" className="content-section">
         <div className="section-heading">
-          <p className="eyebrow">Profesyonel Deneyim</p>
+          <p className="eyebrow">Professional Experience</p>
         </div>
 
         <div className="experience-list">
@@ -206,14 +218,21 @@ const Home = () => {
 
       <section id="skills" className="content-section skills-section">
         <div className="section-heading">
-          <p className="eyebrow">Beceriler</p>
+          <p className="eyebrow">Skills</p>
         </div>
         <div className="skills-grid">
           {skills.map((skill) => (
             <article className="skill-card" key={skill.name}>
               <div className={`skill-icon-wrap${skill.invert ? ' is-invert' : ''}`}>
                 {skill.icon ? (
-                  <img className="skill-icon" src={skill.icon} alt="" aria-hidden="true" />
+                  <img
+                    className="skill-icon"
+                    src={skill.icon}
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                  />
                 ) : (
                   <span className="skill-fallback">{skill.name}</span>
                 )}
@@ -227,7 +246,7 @@ const Home = () => {
       <section className="content-section two-column-section">
         <div className="info-panel">
           <div className="section-heading compact-heading">
-            <p className="eyebrow">Eğitim</p>
+            <p className="eyebrow">Education</p>
           </div>
           <ul className="detail-list education-list">
             {education.map((item) => (
@@ -238,7 +257,7 @@ const Home = () => {
 
         <div className="info-panel">
           <div className="section-heading compact-heading">
-            <p className="eyebrow">Sertifikalar</p>
+            <p className="eyebrow">Certificates</p>
           </div>
           <div className="certificate-grid">
             {certificates.map((item) => (
@@ -249,7 +268,15 @@ const Home = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img className="certificate-preview" src={item.preview} alt={item.title} />
+                <img
+                  className="certificate-preview"
+                  src={item.preview}
+                  alt={item.title}
+                  width="900"
+                  height="637"
+                  loading="lazy"
+                  decoding="async"
+                />
                 <div className="certificate-copy">
                   <span className="certificate-issuer">{item.issuer}</span>
                   <span className="certificate-title">{item.title}</span>
@@ -262,17 +289,17 @@ const Home = () => {
       </section>
 
       <section id="contact" className="contact-section">
-        <p className="eyebrow">İletişim</p>
+        <p className="eyebrow">Contact</p>
         <div className="contact-actions">
-          <SmokeButton href="mailto:kenankenan006@gmail.com" width={240}>
+          <SmokeButton href="mailto:kenankenan006@gmail.com" width={240} imgLoading="lazy">
             <MailIcon />
             <span>Email</span>
           </SmokeButton>
-          <SmokeButton href="tel:+905375055107" width={240}>
+          <SmokeButton href="tel:+905375055107" width={240} imgLoading="lazy">
             <PhoneIcon />
-            <span>Telefon</span>
+            <span>Phone</span>
           </SmokeButton>
-          <SmokeButton href="https://www.linkedin.com/in/kenan-%C3%B6zt%C3%BCrk-a90708b6/" width={240}>
+          <SmokeButton href="https://www.linkedin.com/in/kenan-%C3%B6zt%C3%BCrk-a90708b6/" width={240} imgLoading="lazy">
             <LinkedInIcon />
             <span>LinkedIn</span>
           </SmokeButton>
